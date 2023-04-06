@@ -1,6 +1,10 @@
 # E-Commerce-Back-End
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Description
+
+This application builds the back end for an e-commerce site using the latest technolgies and configures it to use sequelize to interact with a MySQL database. The application allows users to retrieve data for categories, products, and tags using API GET routes in Insomnia and successfully create, update, and delete data using API POST< PUT and DELETE routes.
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
@@ -9,33 +13,42 @@
 - [Preview](#preview)
 - [License](#license)
 
-Internet retail, also known as **e-commerce**, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to their prevalence, understanding the fundamental architecture of these platforms will benefit you as a full-stack web developer.
+## Technologies Used
 
-Your task is to build the back end for an e-commerce site by modifying starter code. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.
+- Express
+- Node
+- MySQL
+- Dotenv
+- Sequelize
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met. You’ll need to submit a link to the video and add it to the readme of your project.
+## Installation
 
-## User Story
+- Source the schema.sql files
+- `npm run seed`
+- `node server.js` to start up the server
 
-```md
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
-```
+## Usage
 
-## Acceptance Criteria
+- AS A manager at an internet retail company
+- I WANT a back end for my e-commerce website that uses the latest technologies
+- SO THAT my company can compete with other e-commerce companies
+---
+- GIVEN a functional Express.js API
+- WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+- THEN I am able to connect to a database using Sequelize
+- WHEN I enter schema and seed commands
+- THEN a development database is created and is seeded with test data
+- WHEN I enter the command to invoke the application
+- THEN my server is started and the Sequelize models are synced to the MySQL database
+- WHEN I open API GET routes in Insomnia for categories, products, or tags
+- THEN the data for each of these routes is displayed in a formatted JSON
+- WHEN I test API POST, PUT, and DELETE routes in Insomnia
+- THEN I am able to successfully create, update, and delete data in my database
 
-```md
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
-```
+## Preview
 
+https://user-images.githubusercontent.com/117130907/230463167-5d465e2e-bca7-4678-8ed0-26429599f294.mp4
+
+## License
+
+See LICENSE in repo
